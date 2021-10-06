@@ -64,7 +64,10 @@ def test_get_n_choose_k():
     assert get_n_choose_k(2, 4) == 0
 
 
+
+
 def main():
+    # interfata de tip consola aici
     test_get_perfect_squares()
     test_get_leap_years()
     test_get_n_choose_k()
@@ -89,6 +92,5 @@ def main():
         elif comanda == 4:
             break
 
-
-
-main()
+if __name__ == '__main__':
+  main()
