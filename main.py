@@ -18,6 +18,9 @@ def get_leap_years(start, end):
 
 
 def test_get_leap_years():
+    """
+    Testeaza daca functia get_leap_years functioneaza
+    """
     assert get_leap_years(2000, 2020) == [2000, 2004, 2008, 2012, 2016, 2020]
     assert get_leap_years(2002, 2003) == []
     assert get_leap_years(2000, 2009) == [2000, 2004, 2008]
@@ -39,6 +42,9 @@ def get_perfect_squares(start, end):
 
 
 def test_get_perfect_squares():
+    """
+    Testeaza daca funtia get_perfect_squares functioneaza
+    """
     assert get_perfect_squares(2, 10) == [4, 9]
     assert get_perfect_squares(5, 6) == []
     assert get_perfect_squares(10, 25) == [16, 25]
@@ -49,6 +55,10 @@ def get_n_choose_k(n: int, k: int):
 
 
 def test_get_n_choose_k():
+    """
+    Testeaza daca functia get_n_choose_k functioneaza
+    :return:
+    """
     assert get_n_choose_k(3, 2) == 3
     assert get_n_choose_k(4, 2) == 6
     assert get_n_choose_k(2, 4) == 0
@@ -78,6 +88,7 @@ def main():
             print("Valoarea combinarilor este de ", get_n_choose_k(n, k))
         elif comanda == 4:
             break
+
 
 
 main()
